@@ -11,5 +11,11 @@ public class Beneficiare extends User{
 	@ManyToOne
 	@JoinColumn(name="project")
 	Project project;
+	public Project getProject() {
+		return project;
+	}
+	public void setProject(Project project) {
+		this.project = project;
+	}
 
 }
